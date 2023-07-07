@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style: none;
+    margin-right: 40px;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw); /* 3 columns with 10vw width, vw for responsiveness*/
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex; /* to center the x in the box*/
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.box:hover{
+    background-color: rgb(237, 219, 255);
+}
+.gameinfo{
+    padding: 0 34px; /* padding leaves space from inside and margin leaves space from the outer region */
+}
+.imagebox img{
+    width:0;
+    transition: width 1s ease-in-out;
+}
+/* utility classes */
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(88, 176, 248);
+    color:white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width:950px){
+    .gameContainer{
+        width:90%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-columns: repeat(3,20vw); /* 3 columns with 10vw width, vw for responsiveness*/
+        grid-template-rows: repeat(3,20vw);
+    }
+}
+/*.line{
+    background-color: black;
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+}*/

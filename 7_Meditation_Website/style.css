@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ottoman+Siyaq&display=swap');
+/*font-family: 'Noto Serif Ottoman Siyaq', serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+div h2{
+    font-family: 'Noto Serif Ottoman Siyaq', serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    color:white;
+    font-size:  34px;
+}
+div h2 span{
+    color: brown;
+}
+nav ul {
+ color:white;
+ display: flex;
+ align-items: center;
+ position: relative;
+ top: -41.5%;
+ left: 200%;
+}
+nav ul li{
+    margin-left: 50px;
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: brown;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    transition:  0.5s;
+}
+nav ul li:hover::after{
+    width:100%;
+}
+.content h1{
+    color:white;
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content p{
+    color:white;
+    position: absolute;
+    top:48%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    padding: 10px 30px;
+    position: absolute;
+    top:58%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+a button:hover{
+    background-color: brown;
+}
+.bottom{
+    position: relative;
+    top: 375px;
+    height: 110px;
+    background-color: #313d4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/* to get the icons down*/
+}
+#myProgressBar{
+   width:70vw;
+   cursor: pointer;
+}
+i{
+    padding: 15px;
+}
+.album{
+    width:300px;
+    position: relative;
+    top:10%;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    cursor: pointer;
+    height: 0.2rem;   
+    transition: .1s linear; 
+}

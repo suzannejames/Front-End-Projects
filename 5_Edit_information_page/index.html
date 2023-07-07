@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="finallogo.png" class="logo">
+      <nav>
+          <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li class="dropdown">
+                  <a href="#">Your Profile</a>
+                  <div class="dropdown-content">
+                      <a href="#">Go to My Profile</a>
+                      <a href="#">Course</a>
+                      <a href="#">Customer Support</a>
+                      <a href="#">Logout <i class="logout-icon">&#x2716;</i></a>
+                  </div>
+              </li>
+          </ul>
+      </nav>
+    </div>
+    <table id="editableTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Completed Units</th>
+          <th>Time</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td contenteditable="true">John</td>
+          <td contenteditable="true">5/10</td>
+          <td contenteditable="true">05:00 PM</td>
+          <td><button>Schedule Class</button></td>
+          <td><a><button>Join Call</button></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+  

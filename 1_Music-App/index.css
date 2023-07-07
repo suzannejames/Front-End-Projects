@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body{
+    background-color:#c2cccb;
+    background-image: url(others/markus-spiske-hU9gx8YfVK4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body(visible part, there are invisible padding and margin default by websites thats why we put margin and padding as 0 using *) - targets the body elements whereas * targets universal elements
+If using HTML5, there comes header and footer, so for that if u don't put background color in * it will not show in the header or footer*/
+nav{
+    font-family:'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex; /* puts them on the horizontal axis*/
+    list-style: none;
+    height: 65px;
+    background-color: #313d4c;
+    color:white;
+    align-items: center; /* places the item at the center of the horizontal axis*/
+}
+nav ul li{
+    padding:0 17px
+}
+.logo{
+    width: 44px;
+}
+span{
+    font-size:1.3rem;
+    padding: 0 7px; /* height , width */
+    font-weight: bold;
+}
+a{ /* to remove the blue links */
+    text-decoration: none;
+    color: white;
+}
+/* position: absolute , causes the element to get removed from the page, can have only top and left or bottom and right
+static means that it won't move, doesnt have access to top bottom right left properties
+fixed elements are also removed from the doc when u scroll it will remain in its placed
+sticky works with bottom(check again )*/
+.container{
+    min-height: 68vh; /* for bottom to work in bottom class*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100px;
+    display: flex;
+    justify-content: center;
+    margin:23px auto;
+    width:40vw;
+    background: rgb(49,61,76);
+    background: radial-gradient(circle, rgba(49,61,76,1) 35%, rgba(49,61,76,1) 42%, rgba(71,168,177,1) 100%, rgba(49,61,76,1) 100%);    color: black;
+    border-radius: 15px;
+    position: relative;
+    left:-19%;
+    top:-9.5px;
+}
+.bottom{
+    position: sticky;
+    height: 110px;
+    background-color: #313d4c;
+    bottom:-10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/* to get the icons down*/
+}
+#myProgressBar{
+   width:70vw;
+   cursor: pointer;
+}
+i{
+    padding: 15px;
+}
+.album{
+    width:300px;
+    position: relative;
+    top:10%;
+}
+.songBanner{
+position: relative;
+top:14%;
+left: -1%;
+text-align: center;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    cursor: pointer;
+    height: 0.2rem;   
+    transition: .1s linear; 
+}
